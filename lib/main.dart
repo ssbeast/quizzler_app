@@ -73,7 +73,16 @@ class _QuizPageState extends State<QuizPage> {
                   fontSize: 20.0,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () {
+                setState(() {
+                  scoreKeeper.add(
+                    Icon(
+                      Icons.check,
+                      color: Colors.green,
+                    ),
+                  );
+                });
+              },
             ),
           ),
         ),
